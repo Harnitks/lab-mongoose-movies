@@ -1,0 +1,10 @@
+<h2>Celebrities</h2>
+<a href="/celebrities/new">Add a celebrity</a>
+
+{{#each celebrityArray}}
+
+<h3>{{this.name}}</h3>
+<a href="/celebrities/show/{{this._id}}">See more</a>
+<a href="/celebrities/{{this._id}}/delete">Delete this book</a>
+
+{{/each}}
